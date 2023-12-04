@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Create an Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- Support Page Content -->
+<section class="support-page">
+    <div class="faq-section">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq-list">
+            <!-- FAQs will be displayed here -->
+            <div class="faq">
+                <h3>How do I create an account?</h3>
+                <p>To create an account, click on the 'Sign Up' button on the top right corner of the page.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I reset my password?</h3>
+                <p>You can reset your password by clicking on the 'Forgot Password' link on the sign-in page.</p>
+            </div>
+            <!-- More FAQs -->
+        </div>
+    </div>
+    <div class="manual-section">
+        <h2>User Manual</h2>
+        <p>Instructions on how to use the website will be displayed here.</p>
+    </div>
+    <aside class="support-actions">
+        <h2>Can't Find an Answer?</h2>
+        <p>If you can't find the answer in the FAQs, send us an email:</p>
+        <form action="#">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </aside>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

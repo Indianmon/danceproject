@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Create an Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- Customer Feedback Section -->
+<section class="customer-feedback">
+    <div class="feedback-form">
+        <h2>Customer Feedback</h2>
+        <p>See ratings and reviews from our users!</p>
+        <div class="feedback-options">
+            <label for="feedback-type">Post to:</label>
+            <select name="feedback-type" id="feedback-type">
+                <option value="public">Public</option>
+                <option value="registered-users">Registered Users Only</option>
+            </select>
+        </div>
+        <div class="feedback-posts">
+            <!-- Feedback posts will be displayed here -->
+            <!-- For example, using a container with user feedback -->
+            <div class="feedback-post">
+                <p>Posted by User123</p>
+                <p>Great experience with the website!</p>
+                <p>Ratings: ★★★★☆</p>
+            </div>
+        </div>
+        <!-- User sign-in required to post feedback -->
+        <div class="signin-required">
+            <p>Please sign in to post feedback.</p>
+            <a href="#">Sign In</a>
+        </div>
+    </div>
+    <aside class="testimonial-videos">
+        <!-- Testimonial videos or advertisements will be displayed here -->
+        <div class="video">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </aside>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

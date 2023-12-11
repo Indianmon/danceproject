@@ -4,43 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Feedback</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the customer feedback page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav-links li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .nav-links li a:hover {
+            color: #333;
+        }
+
+        /* Customer feedback styles */
+        .customer-feedback {
+            padding: 40px 20px;
+        }
+
+        .feedback-form {
+            margin-bottom: 40px;
+        }
+
+        .feedback-options select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .feedback-posts {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .feedback-post {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .feedback-post p {
+            margin-bottom: 8px;
+        }
+
+        .signin-required {
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .signin-required a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .testimonial-videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -10px;
+        }
+
+        .testimonial-videos .video {
+            width: calc(50% - 20px);
+            margin: 20px 10px;
+        }
+
+        .testimonial-videos iframe {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Responsive Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Overview</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Create an Account</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
+<!-- Include the navbar using JavaScript -->
+<div id="navbar-placeholder"></div>
 
 <!-- Customer Feedback Section -->
 <section class="customer-feedback">
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Amar</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="customerfeedback.html">Feedback</a></li>
+                <li class="right"><a href="login.html">Sign In/Create An Account</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="feedback-form">
         <h2>Customer Feedback</h2>
         <p>See ratings and reviews from our users!</p>
@@ -76,6 +171,16 @@
         </div>
     </aside>
 </section>
+
+<!-- JavaScript to include the navbar -->
+<script>
+    // Fetch and include the navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+</script>
 
 <script src="script.js"></script>
 </body>

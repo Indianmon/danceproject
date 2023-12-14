@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <style>
         /* Additional styles for the customer feedback page */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
-            color: #fff;
+            color: rgb(255, 255, 255);
             margin: 0;
             padding: 0;
         }
 
-        /* Navbar styles */
+        
         .navbar {
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -112,34 +117,47 @@
 
         .testimonial-videos iframe {
             width: 100%;
-            height: 200px;
+            height: 400px;
         }
+
+        .signin-required {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .signin-required a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
 
 <!-- Include the navbar using JavaScript -->
 <div id="navbar-placeholder"></div>
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">AMAR</a>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="customerfeedback.html">Feedback</a></li>
+            <li class="right"><a href="login.html">Sign In/Create An Account</a></li>
+        </ul>
+    </div>
+</nav>
 
 <!-- Customer Feedback Section -->
 <section class="customer-feedback">
-    <div class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Amar</a>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="overview.html">Overview</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="customerfeedback.html">Feedback</a></li>
-                <li class="right"><a href="login.html">Sign In/Create An Account</a></li>
-            </ul>
-        </div>
-    </div>
+  
 
     <div class="feedback-form">
-        <h2>Customer Feedback</h2>
-        <p>See ratings and reviews from our users!</p>
-        <div class="feedback-options">
+        <h3>Customer Feedback</h3>
+        <p style="color: rgb(71, 242, 242);">See ratings and reviews from our users!</p>
+        <div class="feedback
+        -options">
             <label for="feedback-type">Post to:</label>
             <select name="feedback-type" id="feedback-type">
                 <option value="public">Public</option>
@@ -149,25 +167,25 @@
         <div class="feedback-posts">
             <!-- Feedback posts will be displayed here -->
             <!-- For example, using a container with user feedback -->
-            <div class="feedback-post">
-                <p>Posted by User123</p>
-                <p>Great experience with the website!</p>
-                <p>Ratings: ★★★★☆</p>
+            <div class="feedback-post"   >
+                <p style="color: rgb(186, 238, 238);" >Posted by User123</p>
+                <p style="color: rgb(186, 238, 238);">Great experience with the website!</p>
+                <p style="color: rgb(186, 238, 238);">Ratings: ★★★★☆</p>
             </div>
         </div>
         <!-- User sign-in required to post feedback -->
         <div class="signin-required">
-            <p>Please sign in to post feedback.</p>
-            <a href="#">Sign In</a>
+            <p style="color: rgb(72, 7, 80);">Please sign in to post feedback.</p>
+            
         </div>
     </div>
     <aside class="testimonial-videos">
         <!-- Testimonial videos or advertisements will be displayed here -->
         <div class="video">
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YeNWNUfM-rk?si=xfsXLk7DrRRImvjZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uQ6W13hglXw?si=Ml2T3eka-x3sl_jm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
         </div>
     </aside>
 </section>
@@ -183,5 +201,15 @@
 </script>
 
 <script src="script.js"></script>
+
+
+    <div class="footer-container">
+        <p> @2023 AMAR Website<br/>
+        Authors: Abiodun Obafemi, Annaliese Watson, Marcelle Tamegnon, Ritvik Roy 
+        <br/>
+        CONTACT US: amar@gmail.com
+        </p>
+    </div>
+</footer>
 </body>
 </html>

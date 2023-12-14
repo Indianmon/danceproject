@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <style>
         /* Additional styles for the support page */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             margin: 0;
             padding: 0;
         }
@@ -56,6 +61,26 @@
             color: #333;
         }
 
+        /* Center align the headings */
+        .faq-section h2,
+        .manual-section h2,
+        .support-actions h2 {
+            text-align: center;
+            color: #fff; /* Set header color to white */
+        }
+
+        .manual-section p,
+        .support-actions p {
+            color: #000; /* Set paragraph color to black */
+        }
+
+        /* Center the section */
+        .manual-section {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px; /* Adjust the max-width as needed */
+        }
+
         /* FAQ and sections styles */
         .support-page {
             padding: 40px 20px;
@@ -80,7 +105,7 @@
         }
 
         .faq p {
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
         }
 
         .manual-section h2, .support-actions h2 {
@@ -122,44 +147,53 @@
 
 <!-- Include the navbar using JavaScript -->
 <div id="navbar-placeholder"></div>
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">AMAR</a>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="customerfeedback.html">Feedback</a></li>
+            <li class="right"><a href="login.html">Sign In/Create An Account</a></li>
+        </ul>
+    </div>
+</nav>
 
 <!-- Support Page Content -->
 <section class="support-page">
-    <div class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Amar</a>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="overview.html">Overview</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="customerfeedback.html">Feedback</a></li>
-                <li class="right"><a href="login.html">Sign In/Create An Account</a></li>
-            </ul>
-        </div>
+    
+       
     </div>
 
     <div class="faq-section">
         <h2>Frequently Asked Questions (FAQs)</h2>
         <div class="faq-list">
-            <!-- FAQs will be displayed here -->
             <div class="faq">
-                <h3>How do I create an account?</h3>
+                <h2>How do I create an account?</h2>
                 <p>To create an account, click on the 'Sign Up' button on the top right corner of the page.</p>
             </div>
             <div class="faq">
-                <h3>How do I reset my password?</h3>
+                <h2>How do I reset my password?</h2>
                 <p>You can reset your password by clicking on the 'Forgot Password' link on the sign-in page.</p>
             </div>
             <!-- More FAQs -->
         </div>
     </div>
-    <div class="manual-section">
+    <div class="manual-section" style="color: black;">
         <h2>User Manual</h2>
-        <p>Instructions on how to use the website will be displayed here.</p>
+        <p>Welcome to our website! Here's a quick guide to using the site:</p>
+        <p>
+            <li>Explore the navigation menu to discover various sections.</li>
+            <li>Use the 'Support' page for FAQs and help.</li>
+            <li>Provide feedback through the 'Feedback' section.</li>
+            <li>Create an account to access additional features.</li>
+            <!-- Add more instructions -->
+        </p>
     </div>
     <aside class="support-actions">
         <h2>Can't Find an Answer?</h2>
-        <p>If you can't find the answer in the FAQs, send us an email:</p>
+        <p>If you can't find the answer in the FAQs, send us an email below:</p>
         <form action="#">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -181,5 +215,14 @@
 </script>
 
 <script src="script.js"></script>
+
+    <div class="footer-container">
+        <p> @2023 AMAR Website<br/>
+        Authors: Abiodun Obafemi, Annaliese Watson, Marcelle Tamegnon, Ritvik Roy
+        <br/>
+        CONTACT US: amar@gmail.com
+        </p>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,12 @@
+/* Footer.css */
+
+.footer-container {
+    text-align: center;
+    position: 20px;
+    bottom:0;
+    background-color: #fff;
+    color: black;
+    font-family: Arial, sans-serif;
+    width:100%;
+}
+  
